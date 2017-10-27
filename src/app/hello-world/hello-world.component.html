@@ -1,0 +1,21 @@
+<p ugly>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi architecto maiores fuga aperiam rem omnis tenetur ipsum, consequatur eius optio quis saepe reprehenderit accusamus asperiores nemo ex nobis, quam libero.
+</p>
+<h1 [ngStyle]="{color: color}">{{name}}</h1>
+<h1 [ngStyle]="{color: '#312'}">{{name}}</h1>
+<h1 [style.color]="color">{{name}}</h1>
+
+<h1 [ngClass]="{angry: angry}">{{name}}</h1>
+<h1 [ngClass]="{angry: true}">{{name}}</h1>
+<h1 [class.angry]="angry">{{name}}</h1>
+
+
+<input type="text" [value]="name"/>
+<button (click)="changeName()">Set name to "Sonny"</button>
+<input type="text" [value]="name" (keyup)="changeName2($event)"/>
+<input type="text" [(ngModel)]="name">
+<h1>Hello. {{name}}</h1>
+<h1>{{greet()}}</h1>
+<h1>{{date}}</h1>
+<h1>{{date.year}}</h1>
+<img [src]="imageUrl" alt=""/>
